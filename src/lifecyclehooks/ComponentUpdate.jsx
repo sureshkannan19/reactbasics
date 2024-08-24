@@ -7,7 +7,7 @@ class OnlyEvens extends React.Component {
   }
   shouldComponentUpdate(nextProps, nextState) {
     console.log("Should I update?");
-    return nextProps.value % 2 === 0;
+    return nextProps.value % 2 == 0;
   }
   componentDidMount() {
     console.log("Component didmount.");

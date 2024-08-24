@@ -5,14 +5,16 @@ import MyForm from "./state/MyForm";
 import MyProps from "./props/MyProps";
 import ComponentUpdate from "./lifecyclehooks/ComponentUpdate";
 import ComponentMount from "./lifecyclehooks/ComponentMount";
+import MyToDoList from "./rendering/MyToDoList";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-    <ComponentMount />
+    <MyToDoList />
+    {/* <ComponentMount />
     <ComponentUpdate />
     <MyProps />
-    <MyForm />
+    <MyForm /> */}
   </>
 );
 
