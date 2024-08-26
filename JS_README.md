@@ -37,9 +37,9 @@ numsWithCompareFun.forEach(x=> console.log(x)); // 9, 80
 const a = ["a", "b", "c"];
 const b = ["d", "e", "f"];
 
-console.log(a.concat(b));
+console.log(a.concat(b)); // a, b, c, d, e, f
 
-console.log(a.join('-'));
+console.log(a.join('-')); // a-b-c-d-e-f
 ```
 
 **Reduce:**
@@ -50,7 +50,7 @@ const initialValue = 0;
 console.log(array1.reduce(
   (accumulator, currentValue) => accumulator + currentValue,
   initialValue,
-));
+)); // 10
 
 const empArr = [ { age: 25, name: 'SK' }, { age: 35, name: 'SK' } ];
 console.log(empArr.reduce(
@@ -162,6 +162,24 @@ function add(a) {
 const addLambda = a => b => c => a + b + c;
 console.log(add(1)(2)(3)) // 6
 console.log(addLambda(1)(2)(3)) //6
+
+Example 2:
+function addTogether(...a) {
+  if(!isNumber(a[0])) return undefined
+  if(a.length > 1) return isNumber(a[1]) ? a[0] + a[1] : undefined;
+  return (b) => isNumber(b) ? a[0] + b : undefined;
+}
+
+function isNumber(x) {
+  return typeof x === 'number';
+}
+
+console.log(addTogether(5, 3));
+console.log(addTogether(3)(5));
+console.log(addTogether(2));
+console.log(addTogether(2, undefined));
+console.log(addTogether('abcde'));
+console.log(addTogether(5)([7]));
 ```
 
 **Object.keys() :**
@@ -173,4 +191,16 @@ function whatIsInAName(collection, source) {
 }
 
 console.log(whatIsInAName([{ "apple": 1, "bat": 2 }, { "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }], { "apple": 1, "bat": 2 }))
+```
+
+**Private & public(binded to this keyword)Variable:**
+
+```
+const Person = function(first, last) {
+  let firstName = first; // private
+  let lastName  = last; // private
+
+  this.getFirstName = () => firstName; // pubic
+  this.getLastName = () => lastName; // pubic
+}
 ```
