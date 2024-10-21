@@ -29,23 +29,17 @@
 1. Inline style: Inline style overrides both class and id property
 <p style="color : red;"></p>
 2. Using Selectors:
-<style>
   p {
     color: red;
   }
-</style>
 3. Using Class Name:
-<style>
   .blue-text {
     color: blue;
   }
-</style>
 4. Using Id: Preferred over class, if an element has both class and id property then preference given to id
-<style>
 #green-text {
   background-color: green;
 }
-</style>
 5.Using type attribute
   Eg:
   [type='checkbox'] {
@@ -131,7 +125,6 @@
         background: var(--fixed-bg-color); -- remains gray
       }
 6. Media Query with break point: when the screen exceeds the media query break point, the default value comes   into picture.
-  <style>
   :root {
     --fixed-bg-color: white;
     --fixed-size: 400px;
@@ -153,11 +146,9 @@
  3. font-family: Lobster, monospace ; -- 2nd value after comma is optional and acts as a fallback value
     Eg:
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-    <style>
       h2 {
         font-family: Lobster, monospace ; -- Lobster is imported from google fonts api, if google font API is down then fallback font-family is given as monospace.
       }
-    </style>
 
 ```
 
