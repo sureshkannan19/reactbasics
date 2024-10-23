@@ -5,6 +5,7 @@
 <img src="https://github.com/sureshkannan19/reactbasics/blob/main/src/assets/Ronaldo.webp" alt="freeCodeCamp logo">
 ```
 
+<hr>
 **Anchor tag:**
 
 ```
@@ -23,6 +24,7 @@
 <a href="#"><img src="https://github.com/sureshkannan19/reactbasics/blob/main/src/assets/Ronaldo.webp" alt="CR7"></a>
 ```
 
+<hr>
 **Style tag:**
 
 ```
@@ -54,6 +56,8 @@
 
 ```
 
+<hr>
+
 **Sizing properties:**
 
 ```
@@ -83,7 +87,10 @@
     margin-bottom: 20px;
     margin-left: 40px;
 9. border
+10. height: 25px;
 ```
+
+<hr>
 
 **Coloring properties:**
 
@@ -91,6 +98,8 @@
 1. rgb(0, 0, 0) to rgb(255, 255, 255)
 2. #000000 to #FFFFFF
 ```
+
+<hr>
 
 **Variable:**
 
@@ -138,7 +147,9 @@
 
 ```
 
-**Font properties:**
+<hr>
+
+**Format text properties:**
 
 ```
  1. font-size: 30px;
@@ -149,14 +160,51 @@
       h2 {
         font-family: Lobster, monospace ; -- Lobster is imported from google fonts api, if google font API is down then fallback font-family is given as monospace.
       }
+ 4. italicized properties:
+    <em></em>
+ 5. Strikthrough text: <s>Text</s>
+ 6. Strong font: <strong>Text</strong>
+ 7. Text align: text-align: justify/center/right/left;
+ 8. Horizontal line: <hr>
 
 ```
+
+**Positioning:**
+
+```
+ 1. position: relative -- move the item away from where it is normally positioned
+ 2. top, bottom, left, right - offset properties to shift element
+ 3. position: absolute --  locks the element in place relative to its parent container,
+    removes the element from the normal flow of the document and using offset properties element is shifted.
+    Note: if parent container does have position: relative property then it goes up the chain locks itelf to body tag.
+ 4. position: fixed; -- on scroll elements stays fixed
+```
+
+**Transform visual content:**
+
+```
+1. a:hover
+   Eg: a:hover {
+        color: red;
+      }
+2. Opacity:
+    A value of 1 is opaque, which isn't transparent at all.
+    A value of 0.5 is half see-through.
+    A value of 0 is completely transparent.
+    Eg: opacity: 0.7;
+3.  text-transform: lowercase/uppercase/initial/inherit/none;
+
+```
+
+<hr>
 
 **Absolute Vs Relative Units:**
 
 ```
 
 ```
+
+<hr>
 
 **Unordered list:**
 
@@ -168,6 +216,8 @@ Displayed as bullet points:
   <li>rat</li>
 </ul>
 ```
+
+<hr>
 
 **Ordered list:**
 
