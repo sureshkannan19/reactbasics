@@ -1,3 +1,34 @@
+**To create a box:**
+
+```
+ #box {
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    box-sizing: border-box; /* Ensures padding is included in total dimensions */
+    border: 5px solid green;
+  }
+```
+
+**CSS Ruleset:**
+
+selector: pseudo-class::pseudo-element {
+declaration block
+}
+
+Eg:
+
+```
+.container p:first-child::first-letter {
+  font-size:42px;
+  text-transform: uppercase;
+}
+
+```
+
 **Image tag:**
 
 ```
