@@ -29,6 +29,17 @@ Eg:
 
 ```
 
+**Ways of applying CSS Rulesets:**
+
+```
+1. Selector Tag
+2. Selector Class
+3. Selector id
+4. Multiple selector
+5. Combinator
+6. Inheritance (from parent to child)
+```
+
 **Image tag:**
 
 ```
