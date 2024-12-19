@@ -3,7 +3,7 @@
 ```
 const a = ["a", "b", "c"];
 
-a.forEach(x=> console.log(x));
+ a.forEach((val, index) => console.log(`Value: ${val}, Index: ${index}`));
 
 for (const [index, element] of a.entries()) {
   console.log(index, element);
